@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Fira Code', monospace;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  background: url("img/fondo.jpg");
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px; /* Espaciado interno del encabezado */
+}
+
+/* Estilos para el logotipo */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 130px; /* Ancho de la imagen del logotipo */
+  height: auto; /* Altura automática para mantener la proporción */
+  margin-right: 10px; /* Espaciado a la derecha de la imagen */
+  cursor: pointer; /* Cambiar el cursor al hacer clic en la imagen */
+}
+
+.botones {
+  display: flex; /* Mostrar botones en línea */
+  align-items: center; /* Alinear botones verticalmente al centro */
+}
+
+.boton {
+  background-color: #f00000; /* Color de fondo del botón */
+  color: #ffffff; /* Color del texto del botón */
+  border: none;
+  padding: 10px 20px; /* Espaciado interno del botón */
+  margin-left: 10px; /* Espaciado entre botones */
+  cursor: pointer;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Fira Code', monospace;
+
+}
+
+.agenda{
+  width: 100%;
+  max-width: 450px; /* Ancho máximo reducido */
+  background-color: #f6f6f6;
+  padding: 20px; /* Espaciado reducido para que sea más compacto */
+  text-align: center;
+  border-radius: 35px;
+}
+
+.input-field {
+  text-align: right; /* Alinear campos a la derecha */
+  background-color: rgba(192, 192, 192, 0.2); /* Ajustar la opacidad */
+  margin: 10px 0; /* Reducir el margen superior e inferior */
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.input-field i {
+  margin-left: 10px; /* Reducir el margen izquierdo */
+  color: #f00000; /* Usar un color rojo consistente */
+}
+
+.input-field label {
+  font-size: 12px; /* Establece el tamaño de fuente deseado para los labels */
+  color: #888; /* Cambia el color de los labels si lo deseas */
+  text-align: center;
+}
+
+input, select {
+  width: 100%;
+  background-color: transparent;
+  border: 0;
+  outline: none;
+  padding: 8px 10px; /* Reducir el espaciado interno */
+  color: #000; /* Usar un color de texto consistente */
+  font-size: 14px; /* Reducir el tamaño de la fuente */
+}
+
+.btn-field button {
+  flex-basis: 40%;
+  min-width: 150px;
+  font-size: 15px;
+  background-color: rgb(255, 0, 0);
+  color: white;
+  height: 40px;
+  border-radius: 10px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+.btn-field button:hover {
+  background-color: rgb(244, 84, 75);
+}
+

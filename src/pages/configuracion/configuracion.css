@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px; /* Espaciado interno del encabezado */
+}
+
+/* Estilos para el logotipo */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 130px; /* Ancho de la imagen del logotipo */
+  height: auto; /* Altura automática para mantener la proporción */
+  margin-right: 10px; /* Espaciado a la derecha de la imagen */
+  cursor: pointer; /* Cambiar el cursor al hacer clic en la imagen */
+}
+
+.botones {
+  display: flex; /* Mostrar botones en línea */
+  align-items: center; /* Alinear botones verticalmente al centro */
+}
+
+.boton {
+  background-color: #f00000; /* Color de fondo del botón */
+  color: #ffffff; /* Color del texto del botón */
+  border: none;
+  padding: 10px 20px; /* Espaciado interno del botón */
+  margin-left: 10px; /* Espaciado entre botones */
+  cursor: pointer;
+}
+
+/* Contenedor principal */
+.container {
+  background: url("img/fondo.jpg");
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Contenido del formulario */
+.form-content {
+  width: 100%;
+  max-width: 600px;
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Encabezado del formulario */
+.form-content h1 {
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: rgb(255, 0, 0);
+  position: relative;
+}
+
+/* Línea decorativa debajo del encabezado */
+.form-content h1::after {
+  content: "";
+  width: 20px;
+  height: 3px;
+  border-radius: 3px;
+  background-color: rgb(255, 6, 6);
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Agregar estilos para el formulario de configuración */
+#configForm {
+  margin-top: 30px;
+}
+
+#configForm label {
+  font-size: 16px;
+  color: #333;
+  margin: 10px 0;
+}
+
+#configForm input[type="text"],
+#configForm input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#configForm input[type="button"] {
+  background-color: rgb(238, 12, 12);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+#configForm input[type="button"]:hover {
+  background-color: rgb(255, 0, 0);
+}
+
+#imagePreview {
+  max-width: 150px; /* Establece el ancho máximo de la imagen */
+  max-height: 150px; /* Establece la altura máxima de la imagen */
+  overflow: hidden; /* Recorta cualquier parte de la imagen que exceda los límites */
+  border-radius: 60%; /* Hace que la imagen sea circular */
+  margin: 0 auto; /* Centra la imagen horizontalmente */
+  text-align: center; /* Alinea el contenido al centro */
+}
+#preview {
+  width: 100%; /* La imagen se ajusta al ancho del contenedor */
+  height: 100%; /* La altura se ajusta automáticamente para mantener la proporción */
+  object-fit: cover; /* Ajusta la imagen para cubrir el contenedor sin distorsionarla */
+  border-radius: 50%; /* Hace que la imagen sea circular */
+}

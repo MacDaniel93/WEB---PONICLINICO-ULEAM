@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Fira Code', monospace;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+#main {
+  background: url("../../../public/fondo.jpg");
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px; /* Espaciado interno del encabezado */
+}
+
+/* Estilos para el logotipo */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 130px; /* Ancho de la imagen del logotipo */
+  height: auto; /* Altura automática para mantener la proporción */
+  margin-right: 10px; /* Espaciado a la derecha de la imagen */
+  cursor: pointer; /* Cambiar el cursor al hacer clic en la imagen */
+}
+
+/* Para cambiar el color de pagina e algunas cosas */
+.container{
+  background:url("img/fondo.jpg");
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* El contenedor de Sing Up */
+.form-content{
+  width: 100%;
+  max-width: 450px;
+  background-color: #f6f6f6;
+  padding: 50px;
+  text-align: center;
+  border-radius: 25px;
+}
+/* Cambiar caracteristicas de H1 */
+.form-content h1{
+  font-size: 30px;
+  margin-bottom: 60px;
+  color: rgb(255, 0, 0);
+  position: relative;
+}
+
+/* La parte de abajo de H1  */
+.form-content h1::after{
+  content: "";
+  width: 30px;
+  height: 4px;
+  border-radius: 3px;
+  background-color: rgb(255, 6, 6);
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  
+}
+/* Añadido para centrar verticalmente */
+.input-field{
+  background-color: rgba(192, 192, 192, 0.225);
+  margin: 15px 0;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  transition: max-height s;
+  overflow: hidden;
+}
+/* Cambiar caracteristias del Input*/
+input{
+  width: 100%;
+  background-color: transparent;
+  border: 0;
+  outline: none;
+  padding: 10px 15px;
+  color: rgb(0, 0, 0);
+}
+/*El placeholder el input es decir la parte de adentro como los comentarios*/
+input::placeholder{
+  color: rgb(0, 0, 0);
+
+}
+/*Cambiar caracteristicas de los iconos*/
+.input-field i{
+  margin-left: 15px;
+  color: rgb(238, 12, 12);
+  
+}
+
+form p {
+  color: rgb(0, 0, 0);
+  text-align: left;
+  font-size: 13px;
+}
+
+form p a{
+  color: rgb(238, 34, 12);
+  margin-left: 5px;
+}
+
+.btn-field{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.btn-field button{
+  flex-basis: 40%;
+  min-width: 150px;
+  font-size: 15px;
+  background-color: rgb(238, 12, 12);
+  color: white;
+  height: 40px;
+  border-radius: 10px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+.input-group {
+  height: 300;
+}

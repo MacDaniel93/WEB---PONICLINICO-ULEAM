@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Fira Code', monospace;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+#main {
+  background: url("../../../public/fondo.jpg");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body {
+  background: url("img/fondo.jpg");
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+}
+
+/* Estilos para el logotipo */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
+
+}
+
+/* Estilos para los botones */
+.botones {
+  display: flex; /* Mostrar botones en línea */
+  align-items: center; /* Alinear botones verticalmente al centro */
+}
+
+.boton {
+  background-color: #f00000; /* Color de fondo del botón */
+  color: #ffffff; /* Color del texto del botón */
+  border: none;
+  padding: 10px 20px; /* Espaciado interno del botón */
+  margin-left: 10px; /* Espaciado entre botones */
+  cursor: pointer;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Fira Code', monospace;
+}
+
+.form-content {
+  width: 100%;
+  max-width: 400px; /* Ancho máximo reducido */
+  background-color: #f6f6f6;
+  padding: 20px; /* Espaciado reducido para que sea más compacto */
+  text-align: center;
+  border-radius: 35px;
+  width: 60%;
+}
+
+/* Cambiar características de H1 */
+.form-content h1 {
+  font-size: 24px; /* Reducir el tamaño de la fuente */
+  margin-bottom: 15px; /* Ajustar margen inferior */
+  color: #f00000; /* Usar un color rojo consistente */
+  position: relative;
+}
+
+.datos-guardados {
+  background-color: #998f8f;
+  width: 30%;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* La parte de abajo de H1 */
+.form-content h1::after {
+  content: "";
+  width: 150px; /* Reducir el ancho */
+  height: 4px;
+  border-radius: 3px;
+  background-color: #f00000; /* Usar un color rojo consistente */
+  position: absolute;
+  bottom: -10px; /* Ajustar la posición */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Añadido para centrar verticalmente */
+.input-field {
+  text-align: right; /* Alinear campos a la derecha */
+  background-color: rgba(192, 192, 192, 0.2); /* Ajustar la opacidad */
+  margin: 10px 0; /* Reducir el margen superior e inferior */
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  margin-bottom: 15px;
+
+}
+
+
+
+/* Cambiar características del Input */
+input, select, textarea {
+  width: 100%;
+  background-color: transparent;
+  border: 0;
+  outline: none;
+  padding: 8px 10px; /* Reducir el espaciado interno */
+  color: #000; /* Usar un color de texto consistente */
+  font-size: 14px; /* Reducir el tamaño de la fuente */
+}
+
+/* El placeholder del input es decir la parte de adentro como los comentarios */
+input::placeholder,
+select::placeholder {
+  color: #888; /* Cambia el color del placeholder a gris, por ejemplo */
+}
+
+.input-field label {
+  font-size: 12px; /* Establece el tamaño de fuente deseado para los labels */
+  color: #888; /* Cambia el color de los labels si lo deseas */
+  text-align: center;
+}
+
+/* Cambiar características de los iconos */
+.input-field i {
+  margin-left: 10px; /* Reducir el margen izquierdo */
+  color: #f00000; /* Usar un color rojo consistente */
+}
+
+form p {
+  color: #000; /* Usar un color de texto consistente */
+  text-align: left;
+  font-size: 13px;
+}
+
+form p a {
+  color: #f00000; /* Usar un color rojo consistente */
+  margin-left: 5px;
+}
+
+textarea::placeholder {
+  color: #888; /* Cambia el color del placeholder en campos de texto */
+}
+
+.btn-field {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn-field button {
+  flex-basis: 40%;
+  min-width: 150px;
+  font-size: 15px;
+  background-color: rgb(255, 0, 0);
+  color: white;
+  height: 40px;
+  border-radius: 10px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+.btn-field button:hover {
+  background-color: rgb(244, 84, 75);
+}
+
+
